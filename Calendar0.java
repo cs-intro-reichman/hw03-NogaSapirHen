@@ -18,18 +18,20 @@ public class Calendar0 {
 			commonOrLeap = "leap";
 		}
 		System.out.println(year + " is a " + commonOrLeap + " year");  
+		for (int i=1; i < 13; i==) {
+		System.out.println("Month "+ i + " has " + (nDaysInMonth(i, year)) + " days")
+		}
 	}
 
 	// Tests the nDaysInMonth function.
 	private static void nDaysInMonthTest(int year) {
 		int Month;
-		int days;
+		int days = 31;
 		for ( int i = 1; i < 13; i ++)
 		{
 			nDaysInMonth( i , year);
 		switch (year) {
 			case 1: Month = 1;
-			days = 31;
 			break;
 			case 2: Month = 2;
 			if (isLeapYear(year) == true)
@@ -37,34 +39,28 @@ public class Calendar0 {
 			else days = 28;
 			break;
 			case 3: Month = 3;
-			days = 31;
 			break;
 			case 4: Month = 4;
 			days = 30;
 			break;
 			case 5: Month = 5;
-			days = 31;
 			break;
 			case 6: Month = 6;
 			days = 30;
 			break;
 			case 7: Month = 7;
-			days = 31;
 			break;
 			case 8: Month = 8;
-			days = 31;
 			break;
 			case 9: Month = 9;
 			days = 30;
 			break;
 			case 10: Month = 10;
-			days = 31;
 			break;
 			case 11: Month = 11;
 			days = 30;
 			break;
 			case 12: Month = 12;
-			days = 31;
 			break;
 			default: Month = 0;
 			days = 0;
@@ -96,6 +92,6 @@ public class Calendar0 {
 				return 29;
 				else return 28;
 			}
-		return 0;	
+		else return 0;	
 	}
 }
