@@ -12,6 +12,14 @@ public class UniqueChars {
      */
     public static String uniqueChars(String s) {
         // Replace the following statement with your code
-        return null;
+        String NoDuplicate = "";
+        for (int i = 0; i < s.length(); i++)
+        {
+            char temp = s.charAt(i);
+            if ((NoDuplicate.indexOf(temp) == (-1)) || (temp == 32))
+            NoDuplicate += temp;
+        }
+
+        return NoDuplicate;
     }
 }
