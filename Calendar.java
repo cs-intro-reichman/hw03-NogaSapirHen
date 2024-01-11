@@ -25,7 +25,11 @@ public class Calendar {
 	 // If the month changes, sets the number of days in this month.
 	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
-		//new year
+		// days of the week
+		if ( dayOfWeek == 7)
+		dayOfWeek = 1;
+		else dayOfWeek ++;
+		 //new year
 		if ( dayOfMonth == 31 && month == 12) {
 			year ++;
 			month = 1;
@@ -41,10 +45,6 @@ public class Calendar {
 		else
 			//neither
 			dayOfMonth ++;
-		// days of the week
-		if ( dayOfWeek == 7)
-		dayOfWeek = 1;
-		else dayOfWeek ++;
 	}
 
 
@@ -54,7 +54,7 @@ public class Calendar {
     // Returns true if the given year is a leap year, false otherwise.
 	private static boolean isLeapYear(int year) {
 	    boolean LeapYear = false;
-		LeapYear = (((year % 400) == 0) || ((year % 4) == 0) && ((year % 100) != 0));
+		LeapYear = ((((year % 400) == 0) || ((year % 4) == 0))) && ((year % 100) != 0));
 		return LeapYear;
 	}
 	 
