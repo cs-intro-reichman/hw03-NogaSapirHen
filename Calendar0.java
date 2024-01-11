@@ -18,8 +18,8 @@ public class Calendar0 {
 			commonOrLeap = "leap";
 		}
 		System.out.println(year + " is a " + commonOrLeap + " year");  
-		for (int i=1; i < 13; i==) {
-		System.out.println("Month "+ i + " has " + (nDaysInMonth(i, year)) + " days")
+		for (int i=1; i < 13; i++) {
+		System.out.println("Month "+ i + " has " + (nDaysInMonth(i, year)) + " days");
 		}
 	}
 
