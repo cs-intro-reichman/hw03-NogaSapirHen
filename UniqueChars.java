@@ -12,6 +12,8 @@ public class UniqueChars {
      */
     public static String uniqueChars(String s) {
         // Replace the following statement with your code
+
+        // # feedback: Variable Naming: The variable NoDuplicate can be renamed to follow camelCase conventions, such as noDuplicate.
         String NoDuplicate = "";
         for (int i = 0; i < s.length(); i++)
         {

@@ -6,6 +6,21 @@ public class Calendar {
 	static int nDaysInMonth = 31; // Number of days in January
 	static	int SundayCount = 0;
 
+
+	/*
+ 		# feedback: 
+   		Infinite Loop: 
+     		It appears there might be an issue with the condition in your while loop. 
+       		Please double-check the condition while (year<year+1) as it seems to result in an infinite loop.
+
+		Redundant Code: 
+  		The function nDaysInMonth is already returning the correct number of days. 
+    		You don't need to call it again inside the advance method.
+
+		Variable Naming: 
+  		It's a good practice to follow naming conventions. 
+    		You have both SundayCount and dayOfWeek variables. Ensure consistency in naming.
+	*/
     public static void main(String args[]) {
 		int year = Integer.parseInt(args[0]);
         	while (year<year+1)
