@@ -11,6 +11,19 @@ public class LoanCalc {
      * Expects to get three command-line arguments: sum of the loan (double),
      * interest rate (double, as a percentage), and number of payments (int).  
      */
+
+	/*
+		# feedback:
+  		1. Brute Force Solver: 
+    		In your bruteForceSolver method, the iteration is increasing payment by epsilon in each iteration. 
+      		This might lead to inaccurate results. 
+		Instead, you should increment by a small fraction of payment.
+
+		2. Variable Naming: 
+  		Similar to Calendar.java, maintain consistency in variable naming. 
+  		You have iterationCounter and iterationCounter1 and iterationCounter2. 
+    		Consistent naming will make your code more readable.
+ 	*/
 	public static void main(String[] args) {		
 	
 		// Gets the loan data
