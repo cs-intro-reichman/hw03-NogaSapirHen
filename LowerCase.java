@@ -11,6 +11,7 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
+        // # feedback: Method Naming: Java conventionally uses camelCase for method names. Consider renaming your method to lowerCase instead of LowerCase.
         String fixed = "";
         for ( int i = 0; i < s.length (); i ++) {
             // upper-case letter
